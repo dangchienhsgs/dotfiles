@@ -34,4 +34,5 @@ let g:airline_symbols.linenr = ''
 Plugin 'fatih/vim-go'
 let g:go_bin_path = expand("/home/dangchienhsgs/.go")
 set nospell
+set shell=/usr/bin/fish
 
