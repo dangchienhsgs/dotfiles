@@ -1,6 +1,6 @@
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+set guifont=Adale 10
 colorscheme molokai
-let g:airline_theme='molokai'
+let g:airline_theme='badwolf'
 " air-line
 let g:airline_powerline_fonts = 1
 
@@ -32,7 +32,8 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 Plugin 'fatih/vim-go'
-let g:go_bin_path = expand("/home/dangchienhsgs/.go")
-set nospell
 set shell=/usr/bin/fish
+let g:go_bin_path = expand("/home/dangchienhsgs/.go")
+let g:go_disable_autoinstall = 1
+set nospell
 
