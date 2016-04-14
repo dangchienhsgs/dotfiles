@@ -10,3 +10,25 @@ alias cdsetup="cd /mnt/Setup/"
 #set -x PATH $ACTIVATOR $PATH
 #set -x GOPATH '/mnt/Data/Projects/go'
 #set -x GOROOT '/usr/lib/go'
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+export PATH=$PATH:/opt/nodejs/bin
+export GOROOT=/usr/lib/go/
+export GOPATH=/home/dangchienhsgs/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:/opt/hadoop/bin:/opt/spark/bin
+export SCALA_HOME=/opt/scala
+export PATH=$PATH:$SCALA_HOME/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
