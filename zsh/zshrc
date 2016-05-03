@@ -3,6 +3,8 @@ alias cdlearning="cd /mnt/Data/Learning/"
 alias cdresources="cd /mnt/Data/Tai-lieu/"
 alias cddata="cd /mnt/Data/"
 alias cdsetup="cd /mnt/Setup/"
+alias cdvc="cd /mnt/Data/Resources/vccorp"
+alias gatewayvc="sh /mnt/Data/Resources/vccorp/gateway.sh"
 
 #set -x SCALA_HOME '/usr/local/share/scala'
 #set -x PATH $SCALA_HOME/bin $PATH
@@ -31,4 +33,10 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/opt/hadoop/bin:/opt/spark/bin
 export SCALA_HOME=/opt/scala
 export PATH=$PATH:$SCALA_HOME/bin
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+alias vc-ssh-key='python2 /mnt/Data/Resources/vccorp/get-key-ssh.py'
+
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
