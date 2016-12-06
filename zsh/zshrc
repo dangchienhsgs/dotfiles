@@ -1,10 +1,21 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
 alias cdproject="cd /mnt/Data/Projects/"
 alias cdlearning="cd /mnt/Data/Learning/"
 alias cdresources="cd /mnt/Data/Tai-lieu/"
 alias cddata="cd /mnt/Data/"
 alias cdsetup="cd /mnt/Setup/"
-alias cdvc="cd /mnt/Data/Resources/vccorp"
-alias gatewayvc="sh /mnt/Data/Resources/vccorp/gateway.sh"
 
 #set -x SCALA_HOME '/usr/local/share/scala'
 #set -x PATH $SCALA_HOME/bin $PATH
@@ -33,10 +44,9 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/opt/hadoop/bin:/opt/spark/bin
 export SCALA_HOME=/opt/scala
 export PATH=$PATH:$SCALA_HOME/bin
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-alias vc-ssh-key='python2 /mnt/Data/Resources/vccorp/get-key-ssh.py'
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=ibus
+#export QT_IM_MODULE=ibus
